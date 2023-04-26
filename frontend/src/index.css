@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+ul,
+li,
+a,
+button,
+input,
+textarea {
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+::placeholder {
+  font-size: 17px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 15px;
+  color: #5a5a5a;
+}
+label {
+  font-size: 13px;
+  color: #999;
+}
+
+form,
+.boxItems {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 80px;
+  padding: 40px;
+}
+
+form span {
+  margin-bottom: 20px;
+}
+
+form textarea,
+form select,
+.accountInfo .right input,
+form input {
+  border: 1px solid #212121;
+  border-radius: 6px;
+  color: #212121;
+  font-size: 15px;
+  padding: 0 20px;
+  min-height: 44px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.link {
+  color: #000;
+}
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+.button {
+  background: #000;
+  border: 1px solid #212121;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  height: 48px;
+  left: 1px;
+  padding: 15px 28px;
+}
+
+footer {
+  padding: 10px;
+}
+footer .icon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
